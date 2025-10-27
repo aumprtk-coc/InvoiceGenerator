@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvoiceGenerator - Professional Invoice Management</title>
+    <meta name="description" content="Create, manage, and send professional invoices easily with InvoiceGenerator. Built with React and modern web technologies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0366d6;
+            --text: #111827;
+            --background: #ffffff;
+            --surface: #f9fafb;
+            --border: #e5e7eb;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), #2563eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature {
+            background: var(--surface);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+        .feature h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        .links {
+            margin-top: 3rem;
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        .button:hover {
+            background: #2563eb;
+        }
+        .button + .button {
+            margin-left: 1rem;
+        }
+        .secondary {
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+        .secondary:hover {
+            background: #f3f4f6;
+        }
+        .badge {
+            position: fixed;
+            right: 1rem;
+            bottom: 1rem;
+            background: var(--background);
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px var(--shadow);
+        }
+        @media (max-width: 640px) {
+            h1 { font-size: 2rem; }
+            .tagline { font-size: 1.125rem; }
+            .button + .button { margin-left: 0; margin-top: 1rem; }
+            .links .button { display: block; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="container">
+            <h1>InvoiceGenerator</h1>
+            <p class="tagline">Professional invoice management made simple</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h3>React-Powered UI</h3>
+                    <p>Modern, responsive interface built with React and Tailwind CSS for a seamless user experience.</p>
+                </div>
+                <div class="feature">
+                    <h3>Professional Templates</h3>
+                    <p>Choose from beautiful, customizable invoice templates that look great for any business.</p>
+                </div>
+                <div class="feature">
+                    <h3>Easy Management</h3>
+                    <p>Create, edit, and organize your invoices with our intuitive management system.</p>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://github.com/aumprtk-coc/InvoiceGenerator" class="button">View on GitHub</a>
+                <a href="https://github.com/aumprtk-coc/InvoiceGenerator#readme" class="button secondary">Documentation</a>
+            </div>
+
+            <p style="margin-top: 3rem; color: #6b7280;">
+                The full application is currently being prepared.<br>
+                Watch the repository for updates or star it to show your support!
+            </p>
+        </div>
+    </div>
+    <div class="badge">Made with Emergent</div>
+</body>
+</html>
