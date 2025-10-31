@@ -1,0 +1,16 @@
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/*.pyd
+node_modules
+frontend/node_modules
+venv
+.venv
+.git
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.swo
+dist
+build
